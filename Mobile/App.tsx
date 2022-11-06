@@ -3,7 +3,7 @@ import { useFonts, Roboto_400Regular, Roboto_500Medium, Roboto_700Bold } from '@
 
 import { Loading } from './src/components/Loading';
 
-import { SignIn } from './src/screens/SignIn';
+import { New } from './src/screens/New';
 
 import { AuthContextProvider } from './src/contexts/AuthContext';
 
@@ -21,7 +21,7 @@ export default function App() {
           translucent
         />
 
-        {fontsLoaded ? <SignIn /> : <Loading />}
+        {fontsLoaded ? <New /> : <Loading />}
       </AuthContextProvider>
     </NativeBaseProvider>
   );
